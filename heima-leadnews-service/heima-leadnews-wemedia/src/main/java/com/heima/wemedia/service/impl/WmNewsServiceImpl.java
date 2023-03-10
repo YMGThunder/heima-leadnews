@@ -329,7 +329,7 @@ public class WmNewsServiceImpl  extends ServiceImpl<WmNewsMapper, WmNews> implem
 
         //2.查询文章
         WmNews wmNews = getById(dto.getId());
-        if(wmNews == null){
+        if(wmNews == null     ){
             return ResponseResult.errorResult(AppHttpCodeEnum.DATA_NOT_EXIST,"文章不存在");
         }
 
